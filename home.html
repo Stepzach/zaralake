@@ -182,9 +182,10 @@ h3 {
 
 .site-logo__name {
   font-family: var(--sans);
-  font-size: 1.7rem;
+  font-size: 1.7rem !important;
   font-weight: 400;
   letter-spacing: -.04em;
+  margin-top:5px;
 }
 
 .site-nav-panel {
@@ -203,7 +204,7 @@ h3 {
 .site-nav a,
 .site-footer nav a {
   font-family: var(--sans);
-  font-size: .88rem;
+  font-size: 1rem !important;
 }
 
 .site-nav a {
@@ -240,7 +241,7 @@ h3 {
   display: flex;
   align-items: flex-end;
   overflow: hidden;
-  background: var(--olive-deep);
+  background: var(--cream) !important;
   color: var(--cream);
 }
 
@@ -251,9 +252,13 @@ h3 {
   inset: 0;
   width: 100%;
   height: 100%;
+      margin-top: 1.7rem;
+  
 }
 
-.hero__media { z-index: -1; }
+.hero__media { z-index: -1;     width: auto;
+    height: auto;
+}
 
 .hero__image {
   object-fit: cover;
@@ -267,7 +272,7 @@ h3 {
     linear-gradient(0deg, rgba(22, 27, 20, .42), transparent 60%);
 }
 
-.hero__content { padding-block: 5rem 4rem; }
+.hero__content { padding: 2rem; margin-bottom: 2rem; }
 
 .hero .eyebrow { color: #ece2ce;     font-size: .79rem !important;}
 
@@ -1308,7 +1313,7 @@ h3 {
   .site-nav a {
     min-height: 3.4rem;
     font-family: var(--sans);
-    font-size: 1.15rem;
+    font-size: 1.45rem !important;
     font-weight: 550;
     letter-spacing: -.025em;
   }
